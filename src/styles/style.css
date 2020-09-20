@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, Sans-Serif, sans-serif;
+}
+
+.title{
+    padding: 2px;
+    text-overflow: text-overflow-ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+.selected-image, .selected-video{
+    min-height: 200px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.selected-image img, .selected-video video{
+    width: 100%;
+    height: auto;
+}
+
+.image-thumbnail, .video-thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-thumbnail img, .video-thumbnail video{
+    width: auto;
+    height: 70px;
+    padding: 1px;
+    border: 1px solid grey;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+}
